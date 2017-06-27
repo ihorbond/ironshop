@@ -1,0 +1,16 @@
+<h2> Edit product details </h2>
+
+<form method="post" action="/products/<%= productDetails._id %>/update">
+  <label for="product-name-input"> Edit name </label>
+  <input id="product-name-input" type="text" name="productName" placeholder="<%= productDetails.name %>">
+  <br>
+  <label for="product-price-input"> Edit price </label>
+  <input id="product-price-input" type="number" name="productPrice" placeholder="<%= productDetails.price %>">
+  <br>
+  <label for="priduct-image-input"> Edit image </label>
+  <input id="product-image-input" type="url" name="productImage" placeholder="<%= productDetails.imageUrl %>">
+  <br>
+  <label for="product-description-input"> Edit description </label>
+  <textarea id="product-description-input" name="productDescription" placeholder="<%= productDetails.description %>"></textarea>
+  <br>
+  <button> Submit Changes </button>

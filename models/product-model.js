@@ -9,7 +9,7 @@ const myProductSchema = new Schema ({
    description: {type: String}
 });
 
-const Product = mongoose.model('Product', myProductSchema);
+const ProductModel = mongoose.model('Product', myProductSchema);
 //Product is a collection. Product -> products -> db.products.find()
 
-module.exports = Product;
+module.exports = ProductModel;
